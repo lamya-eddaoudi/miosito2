@@ -1,21 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-    <title>Hello World</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        h1 {
-            color: #644870;
-            margin-top: 200px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Lamya Eddaoudi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+  
+  <!-- HEADER / NAVIGAZIONE -->
+  <div class="container-fluid">
+    <div class="row bg-black align-items-center">
+
+      <!-- Logo / Titolo -->
+      <div class="col-4 col-lg-2">
+        <h1 class="font-3 color-red nav-link">Portfolio</h1>
+      </div>
+
+      <!-- Menu Desktop -->
+      <div class="col-10 col-lg-10 d-none d-lg-flex justify-content-end align-items-center">
+        <ul class="nav-list">
+          <li class="nav-item font-1 color-red">
+            <a href="#" class="nav-link selected">Chi sono</a>
+          </li>
+          <li class="nav-item font-1 color-red">
+            <a href="#" class="nav-link">Progetti</a>
+          </li>
+          <li class="nav-item font-1 color-red">
+            <a href="#" class="nav-link">Contatti</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Menu Mobile (hamburger) -->
+      <div class="col-8 col-lg-1 d-flex d-lg-none justify-content-end align-items-center">
+        <button class="btn-menu">menu hamburger</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigazione Mobile -->
+  <div class="mobile-nav-wrapper d-lg-none">
+    <button class="btn btn-close mb-3">Close</button>
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link selected">Chi sono</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Progetti</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Contatti</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row align-items-center">
+
+      <!-- Testo principale -->
+      <div class="col-md-4 offset-md-2 order-sm-0 d-flex">
+        <h1 class="font-2 color-red">LAMYA EDDAOUDI</h1>
+      </div>
+
+      <!-- Immagine + rettangolo -->
+      <div class="col-12 col-sm-6 justify-content-end order-sm-1 d-flex p-rel">
+        <div class="foto" alt="Lamya Eddaoudi"></div>
+        <div class="rettangolo"></div>
+      </div>
+    </div>
+  </div>
+
+  <!--SEZIONE 1 – CHI SONO-->
+  <div class="sfondo-1">
+    <div class="container content-wrapper">
+      <div class="row align-items-center sfondo-1">
+
+        <!-- Immagine -->
+        <div class="col-12 col-lg-6 d-flex p-rel">
+          <img class="img-fluid" src="img/rugby.jpg" alt="rugby">
+        </div>
+
+        <!-- Testo -->
+        <div class="col-9 offset-1 col-lg-4 mb-5">
+          <strong class="strong">Chi sono</strong>
+          <p class="font-testi">
+            Mi chiamo Lamya, ho 21 anni e sin da quando ero piccola sono affascinata dal mondo dell’arte e del progetto.<br>
+            Mi sento particolarmente legata al design del prodotto, un ambito in cui posso unire creatività e funzionalità, dando forma concreta alle idee.<br>
+            Amo mettermi alla prova e sfidare me stessa, cercando sempre nuovi modi per crescere, imparare e scoprire fin dove posso arrivare.<br>
+            Nel tempo libero coltivo un’altra grande passione: il rugby. Ho giocato in Serie A e ho avuto l’onore di essere convocata nella Nazionale Italiana, un’esperienza che mi ha insegnato disciplina, lavoro di squadra e determinazione, valori che porto con me anche nel mio percorso nel design.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--SEZIONE 2 – DA DOVE VENGO-->
+  <div class="sfondo-2 p-rel">
+  <div class="rettangolo-1"></div>
+  </div>
+
+  <div class="container content-wrapper">
+    <div class="row">
+      <div class="col-10 offset-1 col-lg-5">
+        <strong class="strong-1">Da dove vengo</strong>
+        <p class="font-testi">
+          Sono nata in Marocco, un Paese ricco di colori, architetture e meraviglie del design che hanno nutrito la mia curiosità e il mio senso estetico fin da bambina.<br>
+          A 10 anni mi sono trasferita in Italia, ad Ancona, una città affacciata sul mare Adriatico.<br>
+          Ancona è un luogo tranquillo ma pieno di vita, dove il mare e le colline si incontrano: qui ho imparato ad apprezzare la semplicità, la calma e la bellezza dei piccoli dettagli.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--JAVASCRIPT MENU MOBILE-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const btnMenu = document.querySelector('.btn-menu');
+      const btnClose = document.querySelector('.btn-close');
+      const mobileNavWrapper = document.querySelector('.mobile-nav-wrapper');
+      const navLinks = document.querySelectorAll('.mobile-nav-wrapper .nav-link');
+
+      // Apre il menu mobile
+      btnMenu.addEventListener('click', function() {
+        mobileNavWrapper.style.display = 'flex';
+        setTimeout(() => {
+          mobileNavWrapper.classList.add('show');
+        }, 10);
+      });
+
+      // Chiude il menu mobile
+      function closeMenu() {
+        mobileNavWrapper.classList.remove('show');
+        setTimeout(() => {
+          if (!mobileNavWrapper.classList.contains('show')) {
+            mobileNavWrapper.style.display = 'none';
+          }
+        }, 300);
+      }
+
+      btnClose.addEventListener('click', closeMenu);
+
+      mobileNavWrapper.addEventListener('click', function(e) {
+        let isLink = false;
+        navLinks.forEach(function(link) {
+          if (link.contains(e.target)) {
+            isLink = true;
+          }
+        });
+
+        if (!isLink) {
+          closeMenu();
+        }
+      });
+    });
+  </script>
 </body>
 </html>

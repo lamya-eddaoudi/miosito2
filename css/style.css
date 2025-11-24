@@ -35,7 +35,7 @@ html, body {
 /*ELEMENTI GRAFICI*/
 .rettangolo {
   width: 590px;
-  height: 235px;
+  height: 232px;
   background-color: #FA3500;
   border: 1px solid #FA3500;
   opacity: 0.6;
@@ -187,6 +187,8 @@ html, body {
   font-size: 18px;
   line-height: 25px;
   color: #1C1C1C;
+  position: relative;
+  z-index: 2;
 }
 
 .strong {
@@ -199,6 +201,8 @@ html, body {
   line-height: 80px;
   color: #FA3500;
   font-weight: 500;
+  position: relative;
+  z-index: 2;
 }
 
 .color-red {
@@ -232,8 +236,23 @@ html, body {
   top: 10px;
   right: 5px;
   color: #1C1C1C;
+  z-index: 1;
 }
-
+.img-prog {
+  width: 300px;
+  height: 220px;
+}
+.footer-text {
+  font-size: 16px;
+  line-height: 18px;
+  color: #fa3500;
+  margin-bottom: 20px;
+}
+.footer{
+  background-color: #1C1C1C;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 /* RESPONSIVE*/
 @media (max-width: 768px) {
   .rettangolo {
@@ -281,8 +300,11 @@ html, body {
   font-size: 55px;
   line-height: 65px;
 }
-
-
+.footer-text {
+  font-size: 12px;
+  line-height: 15px;
+ color:  #fa3500;
+}
 }
 
 

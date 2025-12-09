@@ -173,21 +173,20 @@ html, body {
   display: flex;
 }
 
-/*TESTI E COLORI*/
-.font-1 {
+/*font_header*/
+.font-hamburge {
   font-size: 25px;
   line-height: 25px;
 }
-
-.font-2 {
-  font-size: 80px;
-  line-height: 75px;
-}
-
 .font-portfolio {
   font-size: 35px;
   line-height: 35px;
   font-weight: 500;
+}
+/*TESTI E COLORI*/
+.font-2 {
+  font-size: 80px;
+  line-height: 75px;
 }
 
 .font-testi {

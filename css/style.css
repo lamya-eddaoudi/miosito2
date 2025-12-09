@@ -261,10 +261,53 @@ html, body {
 }
 /* RESPONSIVE*/
 @media query{
-  .font-2 {
+  .font-lamya {
     font-size: 60px;
     line-height: 60px;
   }
+  .strong {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .foto {
+    width: 100%;
+    height: auto;
+  }
+  .rettangolo-3 {
+    width: 200px;
+    height: 550px;
+    background-color: #FA3500;
+    opacity: 0.4;
+    position: absolute;
+    bottom: 0;
+  }
+  .rettangolo-4 {
+    width: 750px;
+    height: 320px;
+    background-color: #FA3500;
+    opacity: 0.4;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: #1C1C1C;
+    z-index: 1;
+  }
+  .img-prog {
+    width: 300px;
+    height: 220px;
+  }
+  .footer-text {
+    font-size: 20px;
+    line-height: 18px;
+    color: #fa3500;
+    margin-bottom: 20px;
+  }
+  .footer{
+    background-color: #1C1C1C;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
   
 }
 

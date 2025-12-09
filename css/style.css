@@ -278,7 +278,7 @@ html, body {
   .sfondo-2 {
     background-position: center center;  
     background-size: cover;            
-    min-height: 325px;                    
+    min-height: 225px;                    
   }
   .strong-1 {
   font-size: 25px;

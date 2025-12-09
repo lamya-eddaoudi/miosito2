@@ -261,7 +261,7 @@ html, body {
   padding-bottom: 20px;
 }
 /* RESPONSIVE*/
-@media query{
+@media (max-width: 768px) {
   .font-lamya {
     font-size: 50px;
     line-height: 50px;
@@ -299,7 +299,32 @@ html, body {
     padding-bottom: 20px;
   }
   
+}
+/* Desktop: immagini in colonna */
+@media (min-width: 768px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
+
+/* Mobile: scroll orizzontale */
+@media (max-width: 767px) {
+  .gallery {
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
   
+  .item {
+    min-width: 80%;
+    scroll-snap-align: center;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 

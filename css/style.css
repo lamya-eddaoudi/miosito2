@@ -261,5 +261,59 @@ html, body {
   padding-bottom: 20px;
 }
 /* RESPONSIVE*/
+@media (max-width: 768px) {
+  .font-lamya {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .strong {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .strong-1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .font-testi {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .rettangolo {
+    width: 90%;
+    height: 300px;
+    top: 20%;
+    right: 5%;
+  }
+
+  .foto {
+    width: 90%;
+    height: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .font-lamya {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .strong {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .strong-1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .font-testi {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
 
 

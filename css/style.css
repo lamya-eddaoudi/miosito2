@@ -263,8 +263,8 @@ html, body {
 /* RESPONSIVE*/
 @media query{
   .font-lamya {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 50px;
+    line-height: 55px;
   }
   .font-testi {
     font-size: 18px;
@@ -288,7 +288,7 @@ html, body {
   } 
   .foto {
     width: 100%;
-    height: auto;
+    height: auto; 
   }
   .rettangolo-3 {
     width: 200px;

@@ -260,29 +260,6 @@ html, body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* 📌 Adattamento generale layout */
-img, .foto, .img-prog, .img-rugby {
-  max-width: 100%;
-  height: auto;
-}
 /* RESPONSIVE*/
-/* 📌 Le colonne vanno a capo su schermo stretto */
-@media (max-width: 992px) {
-  .row {
-    flex-wrap: wrap !important;
-  }
-  .row > div {
-    width: 100% !important;
-    margin-bottom: 20px;
-  }
-}
-
-/* 📌 Per evitare che gli sfondi schiaccino il contenuto */
-.sfondo-1, .sfondo-2, .rettangolo, .rettangolo-1,
-.rettangolo-3, .rettangolo-4 {
-  height: auto;
-  max-height: none;
-}
-
 
 

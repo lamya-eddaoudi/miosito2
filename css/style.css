@@ -266,21 +266,18 @@ html, body {
     font-size: 50px;
     line-height: 50px;
   }
-  .font-testi {
-    font-size: 18px;
-    line-height: 22px;
-    color: #1C1C1C;
-    position: relative;
-    z-index: 2;
-  }
   .strong {
     font-size: 35px;
-    line-height: 60px;
+    line-height: 40px;
      font-weight: 500;
+  }
+  .font-testi {
+    font-size: 22px;
+    line-height: 25px;
   }
   .strong-1 {
     font-size: 35px;
-    line-height: 60px;
+    line-height: 40px;
     color: #FA3500;
     font-weight: 500;
     position: relative;
@@ -290,31 +287,8 @@ html, body {
     width: 100%;
     height: auto; 
   }
-  .rettangolo-3 {
-    width: 200px;
-    height: 550px;
-    background-color: #FA3500;
-    opacity: 0.4;
-    position: absolute;
-    bottom: 0;
-  }
-  .rettangolo-4 {
-    width: 750px;
-    height: 320px;
-    background-color: #FA3500;
-    opacity: 0.4;
-    position: absolute;
-    top: 10px;
-    right: 0;
-    color: #1C1C1C;
-    z-index: 1;
-  }
-  .img-prog {
-    width: 300px;
-    height: 220px;
-  }
   .footer-text {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 18px;
     color: #fa3500;
     margin-bottom: 20px;

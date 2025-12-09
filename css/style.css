@@ -306,26 +306,30 @@ html, body {
     flex-direction: column;
   }
 }
-
-/* Mobile: scroll orizzontale */
+/* Mobile: immagini in orizzontale scrollabile */
 @media (max-width: 767px) {
-  .gallery {
-    flex-direction: row;
-    overflow-x: scroll;
+  .row.align-items-start {
+    flex-wrap: nowrap;
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
+    gap: 20px;
   }
-  
-  .item {
+
+  .row.align-items-start > div {
     min-width: 80%;
     scroll-snap-align: center;
   }
 
-  img {
+  .img-prog {
     width: 100%;
     height: auto;
     display: block;
   }
-}
 
+  /* Rimuove scrollbar brutta */
+  .row.align-items-start::-webkit-scrollbar {
+    display: none;
+  }
+}
 
 

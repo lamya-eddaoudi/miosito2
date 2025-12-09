@@ -12,20 +12,24 @@ html, body {
 /*STRUTTURA E SFONDI*/
 .bg-black {
   background-color: #1C1C1C;
-  margin-bottom: 38px;
+  margin-bottom: 25px;
+
 }
 
 /* Sfondi sezioni */
 .sfondo-1 {
-  background-color: #FA3500;
-  margin-top: 38px;
+  background-color: rgba(250, 53, 0, 0.4);
+  margin-top: 100px;
+  height: 520px;
 }
 
 .sfondo-2 {
   background: transparent url('../img/ancona.jpg') no-repeat center center;
   background-size: cover;
-  min-height: 100vh;
-  margin-top: 38px;
+  min-height: 600px;
+}
+.black-progetti{
+  background-color: #1C1C1C;
 }
 
 .sfondo-2 .row {
@@ -34,36 +38,39 @@ html, body {
 
 /*ELEMENTI GRAFICI*/
 .rettangolo {
-  width: 590px;
-  height: 232px;
+  width: 670px;
+  height:500px;
   background-color: #FA3500;
   border: 1px solid #FA3500;
-  opacity: 0.6;
+  opacity: 0.4;
   position: absolute;
-  top: 43%;
-  transform: translate(-60%, 2%);
+  top: 15%;
+  right:15%;
 }
 .rettangolo-1 {
-  width: 210px;
-  height: 675px;
+  width: 250px;
+  height: 600px;
   background-color: #FA3500;
   border: 1px solid #FA3500;
-  opacity: 0.6;
+  opacity: 0.4;
   position: absolute;
   right: 10%;
-  margin-top: 8%;
+  margin-top: 5%;
 }
 
 .foto {
   width: 670px;
   height: 500px;
-  background-image: url('../img/foto.jpg');
+  background-image: url('../img/lamya.jpg');
   background-size: cover;
   background-position: center;
   margin: 0;
 }
-
-
+.img-rugby {
+  width: 585px;      
+  height: 420px;      
+  object-fit: cover;
+}
 .p-rel {
   position: relative; /* serve per posizionare gli elementi sopra */
 }
@@ -180,11 +187,11 @@ html, body {
 .font-3 {
   font-size: 35px;
   line-height: 35px;
-  font-weight: lighter;
+  font-weight: 500;
 }
 
 .font-testi {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 25px;
   color: #1C1C1C;
   position: relative;
@@ -223,18 +230,18 @@ html, body {
   width: 200px;
   height: 550px;
   background-color: #FA3500;
-  opacity: 0.6;
+  opacity: 0.4;
   position: absolute;
-  top: -20px;
+  bottom: 0;
 }
 .rettangolo-4 {
-  width: 745px;
-  height: 275px;
+  width: 750px;
+  height: 320px;
   background-color: #FA3500;
-  opacity: 0.6;
+  opacity: 0.4;
   position: absolute;
   top: 10px;
-  right: 5px;
+  right: 0;
   color: #1C1C1C;
   z-index: 1;
 }
@@ -243,7 +250,7 @@ html, body {
   height: 220px;
 }
 .footer-text {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 18px;
   color: #fa3500;
   margin-bottom: 20px;
@@ -254,57 +261,12 @@ html, body {
   padding-bottom: 20px;
 }
 /* RESPONSIVE*/
-@media (max-width: 768px) {
-  .rettangolo {
-    width: 570px;
-    height: 220px;
-    top: 40%;
-    transform: translate(-41%, 12%);
+@media query{
+  .font-2 {
+    font-size: 60px;
+    line-height: 60px;
   }
-  .rettangolo-1 {
-    width: 100px;
-    height: 230px;
-    right: 5%;
-    opacity: 0.5;
-  }
-  .rettangolo-3 {
-  width: 150px;
-  height: 550px;
-  opacity: 0.6;
-}
-.rettangolo-4 {
-  opacity: 0.6;
-}
-  .sfondo-2 {
-    background-position: center center;  
-    background-size: cover;            
-    min-height: 225px;                    
-  }
-  .strong-1 {
-  font-size: 25px;
-  line-height: 60px;
-  color: #FA3500;
-  font-weight: 500;
-}
-
-.font-testi {
-  font-size: 14px;
-  line-height: 18px;
-  color: #1C1C1C;
-}
-.strong {
-  font-size: 35px;
-  line-height: 60px;
-}
-.font-2 {
-  font-size: 55px;
-  line-height: 65px;
-}
-.footer-text {
-  font-size: 12px;
-  line-height: 15px;
- color:  #fa3500;
-}
+  
 }
 
 

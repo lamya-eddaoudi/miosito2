@@ -260,76 +260,29 @@ html, body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+/* 📌 Adattamento generale layout */
+img, .foto, .img-prog, .img-rugby {
+  max-width: 100%;
+  height: auto;
+}
 /* RESPONSIVE*/
-@media (max-width: 768px) {
-  .font-lamya {
-    font-size: 50px;
-    line-height: 50px;
+/* 📌 Le colonne vanno a capo su schermo stretto */
+@media (max-width: 992px) {
+  .row {
+    flex-wrap: wrap !important;
   }
-  .strong {
-    font-size: 35px;
-    line-height: 40px;
-     font-weight: 500;
-  }
-  .font-testi {
-    font-size: 22px;
-    line-height: 25px;
-  }
-  .strong-1 {
-    font-size: 35px;
-    line-height: 40px;
-    color: #FA3500;
-    font-weight: 500;
-    position: relative;
-    z-index: 2;
-  } 
-  .foto {
-    width: 100%;
-    height: auto; 
-  }
-  .footer-text {
-    font-size: 22px;
-    line-height: 18px;
-    color: #fa3500;
+  .row > div {
+    width: 100% !important;
     margin-bottom: 20px;
   }
-  .footer{
-    background-color: #1C1C1C;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  
 }
-/* Desktop: immagini in colonna */
-@media (min-width: 768px) {
-  .gallery {
-    flex-direction: column;
-  }
+
+/* 📌 Per evitare che gli sfondi schiaccino il contenuto */
+.sfondo-1, .sfondo-2, .rettangolo, .rettangolo-1,
+.rettangolo-3, .rettangolo-4 {
+  height: auto;
+  max-height: none;
 }
-/* Mobile: immagini in orizzontale scrollabile */
-@media (max-width: 767px) {
-  .row.align-items-start {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 20px;
-  }
 
-  .row.align-items-start > div {
-    min-width: 80%;
-    scroll-snap-align: center;
-  }
-
-  .img-prog {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  /* Rimuove scrollbar brutta */
-  .row.align-items-start::-webkit-scrollbar {
-    display: none;
-  }
-}
 
 

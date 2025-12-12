@@ -285,6 +285,61 @@ html, body {
   .img-prog:hover {
     filter: brightness(1.2);
   }
+  /* FORM CONTATTI */
+  .form-contatti {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: #1C1C1C;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+    transition: bottom 0.45s ease;
+    z-index: 9999;
+    color: white;
+  }
+
+  .form-contatti.show {
+    bottom: 0;
+  }
+
+  .form-contatti form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-contatti input {
+    width: 70%;          /* più corto */
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+  }
+
+  .btn-invia {
+    width: 30%;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .close-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .titolo-form {
+    margin-top: 10px;
+  }
 /* RESPONSIVE*/
 @media (max-width: 768px) {
   .font-2 { 

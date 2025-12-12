@@ -7,6 +7,8 @@
 html, body {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   margin: 0;
+  scroll-padding-top: 60px; /* per evitare che il contenuto venga nascosto dall'header fisso */
+   scroll-behavior: smooth; /* per lo scroll fluido */
 }
 /*FISSARE L'HEADER*/
 .header {
@@ -55,9 +57,10 @@ html, body {
   background-color: #FA3500;
   border: 1px solid #FA3500;
   opacity: 0.4;
-  position: absolute;
   top: 15%;
   right:15%;
+  position: absolute;
+  z-index: 40;
 }
 .rettangolo-1 {
   width: 250px;
@@ -76,6 +79,8 @@ html, body {
   background-image: url('../img/lamya.jpg');
   background-size: cover;
   background-position: center;
+  z-index: 30;
+  position: relative;
   
 }
 .img-rugby {
@@ -193,8 +198,9 @@ html, body {
 }
 
 .font-2 {
-  font-size: clamp (50px,20vw,600px);
-  line-height: 30px;
+  font-size: 80px;
+  line-height: 80px;
+  z-index: 100;
 }
 
 .font-3 {
@@ -338,10 +344,7 @@ html, body {
   .titolo-form {
     margin-top: 10px;
   }
-/* serve per far si che la pagina si muova su in modo fluido*/
-  html {
-  scroll-behavior: smooth;
-}
+
 /* RESPONSIVE*/
 @media (max-width: 768px) {
   .font-2 { 

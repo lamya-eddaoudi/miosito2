@@ -200,13 +200,29 @@
 
       <!-- Colonna destra -->
       <div class="col-12 col-md-3 d-flex flex-column align-items-md-end">
-        <p class="footer-text">Contatti</p>
+       <p class="footer-text" onclick="mostraForm()" style="cursor:pointer;">Contatti</p>
         <p class="footer-text">Chi sono</p>
         <p class="footer-text" >Progetti</p>
       </div>
 
     </div>
   </div>
+</div>
+<!-- FORM CONTATTI (inizialmente nascosto) -->
+<div id="form-contatti" style="display:none; padding:20px; background:#f2f2f2; margin:30px; border-radius:10px;">
+  <h2>Contattami</h2>
+  <form>
+    <label>Nome:</label><br>
+    <input type="text" name="nome" required><br><br>
+
+    <label>Cognome:</label><br>
+    <input type="text" name="cognome" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <button type="submit">Invia</button>
+  </form>
 </div>
     
    <!--JAVASCRIPT MENU MOBILE-->
@@ -252,6 +268,16 @@
     });
   });
 });
+//FORM CONTATTI
+function mostraForm() {
+    const form = document.getElementById("form-contatti");
+    form.style.display = "block";
+
+    window.scrollTo({
+      top: form.offsetTop,
+      behavior: "smooth"
+    });
+  }
   </script>
 </body>
 </html>

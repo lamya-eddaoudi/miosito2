@@ -8,6 +8,16 @@ html, body {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   margin: 0;
 }
+/*FISSARE L'HEADER*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  min-height: 5vh;
+}
+
 
 /*STRUTTURA E SFONDI*/
 .bg-black {
@@ -15,12 +25,14 @@ html, body {
   margin-bottom: 25px;
 
 }
-
+/*MARGINE TRA LE PRIME DUE SEZIONI*/
+.testo-principale {
+  margin-top: 100px;
+}
 /* Sfondi sezioni */
 .sfondo-1 {
   background-color: rgba(250, 53, 0, 0.4);
   margin-top: 100px;
-  height: 520px;
 }
 
 .sfondo-2 {
@@ -64,7 +76,7 @@ html, body {
   background-image: url('../img/lamya.jpg');
   background-size: cover;
   background-position: center;
-  margin: 0;
+  
 }
 .img-rugby {
   width: 585px;      
@@ -173,6 +185,7 @@ html, body {
   display: flex;
 }
 
+
 /*TESTI E COLORI*/
 .font-1 {
   font-size: 25px;
@@ -180,8 +193,8 @@ html, body {
 }
 
 .font-2 {
-  font-size: 80px;
-  line-height: 75px;
+  font-size: clamp (50px,20vw,600px);
+  line-height: 30px;
 }
 
 .font-3 {
@@ -198,18 +211,26 @@ html, body {
   z-index: 2;
 }
 
-.strong {
+.titolo-sezioni {
   font-size: 45px;
   line-height: 80px;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
 }
 
-.strong-1 {
+.titolo-sezioni2 {
   font-size: 35px;
   line-height: 80px;
   color: #FA3500;
   font-weight: 500;
   position: relative;
   z-index: 2;
+}
+.titolo-prog {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 500;
 }
 
 .color-red {
@@ -260,11 +281,91 @@ html, body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* RESPONSIVE*/
-@media query{
-  .font-2 {
-    font-size: 60px;
-    line-height: 60px;
+ /* Effetto hover sulle immagini dei progetti */
+  .img-prog:hover {
+    filter: brightness(1.2);
   }
-  
+/* RESPONSIVE*/
+@media (max-width: 768px) {
+  .font-2 { 
+    font-size: 60px;
+    line-height: 55px;
+  }
+
+  .font-3 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .font-testi {
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+  .font-1 {
+  font-size: 20px;
+  line-height: 25px;
 }
+  .titolo-sezioni {
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 500;
+  }
+ .titolo-sezioni2 {
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 500;
+}
+.titolo-prog {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 500;
+}
+  .img-prog {
+    width: 100%;
+    height: auto;
+  }
+  .img-rugby {
+    width: 100%;      
+    height: auto;      
+  }
+  .foto-2 {
+    height: 300px;
+  }
+  .sfondo-2 {
+    min-height: 400px;
+    margin-bottom: 15px;
+  }
+  .rettangolo-3 {
+    width: 150px;
+    height: 350px;
+  }
+  .rettangolo-4 {
+    height: 390px;
+    margin-top: -10px;
+  }
+  .black-progetti{
+  background-color: #1C1C1C;
+  margin-top: -22px;
+  margin-bottom: -24px;
+}
+.rettangolo-1 {
+  width: 200px;
+  height: 420px;
+  background-color: #FA3500;
+  border: 1px solid #FA3500;
+  opacity: 0.4;
+  position: absolute;
+  right: 5%;
+  margin-top: 5%;
+}
+}
+@media  ( min-width: 1280px) {
+  .font-2 {
+    font-size: 80px;
+    line-height: 70px;
+  }
+}
+
+
+
+

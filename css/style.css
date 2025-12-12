@@ -318,6 +318,7 @@ html, body {
     width: 50%;          /* più corto */
     padding: 8px;
     border: none;
+    border-radius: 3px;
   }
 
   .btn-invia {
@@ -328,6 +329,7 @@ html, body {
     cursor: pointer;
     margin-top: 10px;
     color: #FA3500;
+    border-radius: 3px;
   }
 
   .close-btn {

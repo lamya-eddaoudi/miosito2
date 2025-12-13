@@ -147,24 +147,24 @@
             <strong class="titolo-sezioni2 d-flex justify-content-center align-items-center" id="progetti">Progetti</strong>
           </div>
         </div>
-      <div class="row align-items-start justify-content-center pt-4 pb-4 ">
-        <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+      <div class="row align-items-start justify-content-center pt-4 pb-4">
+        <div class="col-12 col-md-3 d-flex flex-column align-items-center col-progetto">
           <img class="img-prog" src="img/liberty.jpeg" alt="liberty">
           <p class="font-testi mt-3">
             <strong class="titolo-prog">Liberty</strong><br>
             Questa collana l'ho realizzata quando frequentavo le superiori, utilizzando ottone e smalto a caldo.
           </p>
         </div>
-        <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+        <div class="col-12 col-md-3 d-flex flex-column align-items-center col-progetto">
           <img class="img-prog" src="img/betty_boop.jpeg" alt="betty_boop">
-          <p class="font-testi mt-3 col-12col">
+          <p class="font-testi mt-3">
             <strong class="titolo-prog">betty boop</strong><br>
             Questo progetto l'ho realizzato in gruppo all'università, ispirandoci agli anni ’30.
              Abbiamo creato un abat-jour principalmente in cartone, integrando anche altri materiali.
           </p>
         </div>
 
-        <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+        <div class="col-12 col-md-3 d-flex flex-column align-items-center col-progetto">
           <img class="img-prog" src="img/svl.jpg" alt="svl">
           <p class="font-testi mt-3">
             <strong class="titolo-prog">SVL</strong><br>
@@ -173,7 +173,7 @@
           </p>
         </div>
 
-        <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+       <div class="col-12 col-md-3 d-flex flex-column align-items-center col-progetto">
           <img class="img-prog" src="img/donum.jpg" alt="donum">
            <p class="font-testi mt-3">
             <strong class="titolo-prog">Donum</strong><br>
@@ -284,6 +284,34 @@
     document.getElementById("form-contatti").classList.remove("show");
   }
 
+//ANIMAZIONI SCROLL
+document.addEventListener("scroll", function () {
+  const scrollPos = window.scrollY + window.innerHeight;
+
+  // Seleziona immagini e rettangoli
+  const elements = document.querySelectorAll(".img-rugby, .foto-2, .img-prog");
+  const rettangoli = document.querySelectorAll(".rettangolo, .rettangolo-1, .rettangolo-3, .rettangolo-4");
+
+  elements.forEach((el) => {
+    const top = el.offsetTop;
+
+    if (scrollPos > top + 100) {
+      el.classList.add("scroll-animated");
+    } else {
+      el.classList.remove("scroll-animated");
+    }
+  });
+
+  rettangoli.forEach((r) => {
+    const top = r.offsetTop;
+
+    if (scrollPos > top + 100) {
+      r.classList.add("rettangolo-active");
+    } else {
+      r.classList.remove("rettangolo-active");
+    }
+  });
+});
   </script>
 </body>
 </html>

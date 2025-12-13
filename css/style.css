@@ -215,6 +215,7 @@ html, body {
   color: #1C1C1C;
   position: relative;
   z-index: 2;
+  margin-bottom: 25px;
 }
 
 .titolo-sezioni {
@@ -235,7 +236,7 @@ html, body {
 }
 .titolo-prog {
   font-size: 30px;
-  line-height: 30px;
+  line-height: 60px;
   font-weight: 500;
 }
 
@@ -278,6 +279,7 @@ html, body {
   object-fit: cover;
   object-position: center;
   display: block;
+  margin-bottom: -10px;
 }
 .col-progetto {
   display: flex;
@@ -399,7 +401,7 @@ html, body {
   .font-testi {
     font-size: 22px;
     line-height: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   .font-1 {
   font-size: 20px;
@@ -417,7 +419,7 @@ html, body {
 }
 .titolo-prog {
   font-size: 25px;
-  line-height: 30px;
+  line-height: 50px;
   font-weight: 500;
 }
   .img-prog {
@@ -462,7 +464,7 @@ html, body {
 }
  .rettangolo-4 {
   width: 100%;
-  height: 390px;
+  height: 395px;
   background-color: #FA3500;
   opacity: 0.4;
   position: absolute;
@@ -472,12 +474,9 @@ html, body {
   top: 10px;
 }
 }
-@media  ( min-width: 1280px) {
-  .font-2 {
-    font-size: 80px;
-    line-height: 70px;
-  }
-}
+  
+
+
 
 
 

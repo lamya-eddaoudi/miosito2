@@ -1,393 +1,3 @@
-/* stile_esercizio2.css */
-/* * {
-    outline: solid 1px red;
-} */
-
-/*BASE*/
-html, body {
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
-  margin: 0;
-  scroll-padding-top: 60px; /* per evitare che il contenuto venga nascosto dall'header fisso */
-   scroll-behavior: smooth; /* per lo scroll fluido */
-}
-/*FISSARE L'HEADER*/
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  min-height: 5vh;
-}
-
-
-/*STRUTTURA E SFONDI*/
-.bg-black {
-  background-color: #1C1C1C;
-  margin-bottom: 25px;
-
-}
-/*MARGINE TRA LE PRIME DUE SEZIONI*/
-.testo-principale {
-  margin-top: 100px;
-}
-/* Sfondi sezioni */
-.sfondo-1 {
-  background-color: rgba(250, 53, 0, 0.4);
-  margin-top: 100px;
-}
-
-.sfondo-2 {
-  background: transparent url('../img/ancona.jpg') no-repeat center center;
-  background-size: cover;
-  min-height: 600px;
-}
-.black-progetti{
-  background-color: #1C1C1C;
-}
-
-.sfondo-2 .row {
-  min-height: 500px;
-}
-
-/*ELEMENTI GRAFICI*/
-.rettangolo {
-  width: 670px;
-  height:500px;
-  background-color: #FA3500;
-  border: 1px solid #FA3500;
-  opacity: 0.4;
-  top: 15%;
-  right:15%;
-  position: absolute;
-  z-index: 40;
-}
-.rettangolo-1 {
-  width: 250px;
-  height: 600px;
-  background-color: #FA3500;
-  border: 1px solid #FA3500;
-  opacity: 0.4;
-  position: absolute;
-  right: 10%;
-  margin-top: 5%;
-}
-
-.foto {
-  width: 670px;
-  height: 500px;
-  background-image: url('../img/lamya.jpg');
-  background-size: cover;
-  background-position: center;
-  z-index: 30;
-  position: relative;
-  
-}
-.img-rugby {
-  width: 585px;      
-  height: 420px;      
-  object-fit: cover;
-}
-.p-rel {
-  position: relative; /* serve per posizionare gli elementi sopra */
-}
-
-/*NAVIGAZIONE DESKTOP*/
-.nav-list {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-}
-
-.nav-link {
-  color: #FA3500;
-  text-decoration: none;
-  margin: 8px;
-  padding: 8px;
-  white-space: nowrap;
-}
-
-.nav-link:hover {
-  color: #ffffff;
-}
-
-.nav-link.selected {
-  color: #ffffff;
-  cursor: default;
-}
-
-/* NAVIGAZIONE MOBILE*/
-.btn-menu {
-  background: transparent url('../img/menu_hamburger.svg') no-repeat center center;
-  border: none;
-  width: 30px;
-  height: 30px;
-  font-size: 0; /* Nasconde il testo del bottone */
-  margin: 10px 5px !important;
-}
-
-.btn-menu:hover {
-  background-image: url('../img/menu_hamburger_bianco.svg');
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.btn-close {
-  background: transparent url('../img/close.svg') no-repeat center center;
-  background-size: cover;
-  border: none;
-  padding: 0;
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
-  font-size: 0; /* Nasconde il testo del bottone */
-  position: absolute;
-  top: 30px;
-  right: 30px;
-}
-
-.mobile-nav-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #1C1C1C;
-  z-index: 1000;
-  display: flex;
-  padding-top: 33%;
-  justify-content: center;
-  align-items: flex-start;
-  display: none;
-}
-
-.mobile-nav-wrapper .nav-list {
-  flex-direction: column;
-  padding-top: 60px;
-}
-
-.mobile-nav-wrapper .nav-item {
-  margin: 20px 0;
-  width: 100%;
-}
-
-.mobile-nav-wrapper .nav-link {
-  font-size: 24px;
-  padding: 8px 0;
-}
-
-.mobile-nav-wrapper .nav-link.selected {
-  color: #FA3500;
-  border-bottom: none;
-  cursor: default;
-}
-
-.mobile-nav-wrapper .nav-link:hover {
-  color: #ffffff;
-  border-bottom: none;
-}
-
-.mobile-nav-wrapper.show {
-  display: flex;
-}
-
-
-/*TESTI E COLORI*/
-.font-1 {
-  font-size: 25px;
-  line-height: 25px;
-}
-
-.font-2 {
-  font-size: 80px;
-  line-height: 80px;
-  z-index: 100;
-}
-
-.font-3 {
-  font-size: 35px;
-  line-height: 35px;
-  font-weight: 500;
-}
-
-.font-testi {
-  font-size: 20px;
-  line-height: 25px;
-  color: #1C1C1C;
-  position: relative;
-  z-index: 2;
-  margin-bottom: 25px;
-}
-
-.titolo-sezioni {
-  font-size: 45px;
-  line-height: 80px;
-  font-weight: 500;
-  position: relative;
-  z-index: 2;
-}
-
-.titolo-sezioni2 {
-  font-size: 35px;
-  line-height: 80px;
-  color: #FA3500;
-  font-weight: 500;
-  position: relative;
-  z-index: 2;
-}
-.titolo-prog {
-  font-size: 30px;
-  line-height: 60px;
-  font-weight: 500;
-}
-
-.color-red {
-  color: #FA3500;
-}
-
-/* Immagine + rettangolo rosso sopra */
-.foto-2 {
-  height: 500px;
-  background-image: url('../img/unirsm.jpg'); 
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  margin-top: 38px;
-}
-
-.rettangolo-3 {
-  width: 200px;
-  height: 550px;
-  background-color: #FA3500;
-  opacity: 0.4;
-  position: absolute;
-  bottom: 0;
-}
-.rettangolo-4 {
-  width: 850px;
-  height: 320px;
-  background-color: #FA3500;
-  opacity: 0.4;
-  position: absolute;
-  top: -10px;
-  right: 0;
-  color: #1C1C1C;
-  z-index: 1;
-}
-.img-prog {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  margin-bottom: -10px;
-}
-.col-progetto {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.footer-text {
-  font-size: 20px;
-  line-height: 18px;
-  color: #fa3500;
-  margin-bottom: 20px;
-}
-.footer{
-  background-color: #1C1C1C;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
- /* Effetto hover sulle immagini dei progetti */
-  .img-prog:hover {
-    filter: brightness(1.2);
-  }
-  /* FORM CONTATTI */
-  .form-contatti {
-    position: fixed;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    background: #1C1C1C;
-    padding: 20px;
-    transition: bottom 0.45s ease;
-    z-index: 9999;
-    color: #FA3500;
-  }
-
-  .form-contatti.show {
-    bottom: 0;
-  }
-
-  .form-contatti form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .form-contatti input {
-    width: 50%;          /* più corto */
-    padding: 8px;
-    border: none;
-    border-radius: 3px;
-  }
-
-  .btn-invia {
-    width: 10%;
-    padding: 8px;
-    border: none;
-    background: #fff;
-    cursor: pointer;
-    margin-top: 10px;
-    color: #FA3500;
-    border-radius: 3px;
-  }
-
-  .close-btn {
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 22px;
-    cursor: pointer;
-  }
-
-  .titolo-form {
-    margin-top: 10px;
-  }
-  /* ZOOM IMMAGINI AL PASSAGGIO DEL MOUSE */
-.img-rugby,
-.foto-2,
-.img-prog {
-  transition: transform 0.5s ease;
-}
-
-.img-rugby:hover,
-.foto:hover,
-.foto-2:hover,
-.img-prog:hover {
-  transform: scale(1.08);
-}
-
-/* CAMBIO COLORE RETTANGOLI AL PASSAGGIO */
-.rettangolo,
-.rettangolo-1,
-.rettangolo-3,
-.rettangolo-4 {
-  transition: background-color 0.5s ease, opacity 0.5s ease;
-}
-
-.rettangolo:hover,
-.rettangolo-1:hover,
-.rettangolo-3:hover,
-.rettangolo-4:hover {
-  background-color: #FA3500 !important; /* colore alternativo */
-  opacity: 0.7;
-}
-
-
-/* RESPONSIVE*/
 @media (max-width: 768px){
   .font-2 { 
     font-size: 60px;
@@ -436,15 +46,21 @@ html, body {
   .sfondo-2 {
     min-height: 400px;
     margin-bottom: 15px;
+    position: relative;
   }
   .rettangolo-3 {
     width: 150px;
     height: 350px;
   }
   .rettangolo-4 {
-    height: 390px;
-    margin-top: -10px;
-  }
+  width: 100%;
+  height: 160px;
+  top: auto;
+  bottom: auto;
+  position: relative;
+  margin-top: 20px;
+  opacity: 0.25;
+}
   .black-progetti{
   background-color: #1C1C1C;
   margin-top: -22px;
@@ -453,31 +69,21 @@ html, body {
 
 }
 .rettangolo-1 {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  height: 220px;
+  width: 120px;
+  opacity: 0.3;
+}
+.rettangolo-1 {
   width: 200px;
   height: 420px;
   background-color: #FA3500;
   border: 1px solid #FA3500;
   opacity: 0.4;
-  position: absolute;
   right: 5%;
   margin-top: 5%;
 }
- .rettangolo-4 {
-  width: 100%;
-  height: 395px;
-  background-color: #FA3500;
-  opacity: 0.4;
-  position: absolute;
-  right: 0;
-  color: #1C1C1C;
-  z-index: 1;
-  top: 10px;
 }
-}
-  
-
-
-
-
-
-

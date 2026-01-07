@@ -264,7 +264,7 @@ html, body {
 }
 .rettangolo-4 {
   width: 850px;
-  height: 370px;
+  height: 350px;
   background-color: #FA3500;
   opacity: 0.4;
   position: absolute;
@@ -442,7 +442,7 @@ html, body {
     height: 350px;
   }
   .rettangolo-4 {
-    height: 390px;
+    height: 400px;
     margin-top: -10px;
   }
   .black-progetti{

@@ -38,7 +38,7 @@ html, body {
 }
 
 .sfondo-2 {
-  background: transparent url('../img/ancona.jpg') no-repeat center center;
+  background: transparent url('../img/ancona.webp') no-repeat center center;
   background-size: cover;
   min-height: 600px;
 }
@@ -76,7 +76,7 @@ html, body {
 .foto {
   width: 670px;
   height: 500px;
-  background-image: url('../img/lamya.jpg');
+  background-image: url('../img/lamya.webp');
   background-size: cover;
   background-position: center;
   z-index: 30;
@@ -247,7 +247,7 @@ html, body {
 /* Immagine + rettangolo rosso sopra */
 .foto-2 {
   height: 500px;
-  background-image: url('../img/unirsm.jpg'); 
+  background-image: url('../img/unirsm.webp'); 
   background-size: cover;
   background-position: center;
   position: relative;

@@ -136,13 +136,14 @@ html, body {
   background: transparent url('../img/close_50dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg') no-repeat center center;
   background-size: cover;
   border: none;
-  height: 35px;
-  width: 35px;
+  height: 40px;
+  width: 40px;
   padding: 0;
   cursor: pointer;
   font-size: 0; /* Nasconde il testo del bottone */
   position: absolute;
-  margin: 10px 5px !important;
+  top: 10px;
+  right: 10px;
 }
 
 .mobile-nav-wrapper {

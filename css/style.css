@@ -23,7 +23,7 @@ html, body {
 
 /*STRUTTURA E SFONDI*/
 .bg-black {
-  background-color: #1C1C1C;
+  background-color: #000000;
   margin-bottom: 25px;
 
 }
@@ -43,7 +43,7 @@ html, body {
   min-height: 600px;
 }
 .black-progetti{
-  background-color: #1C1C1C;
+  background-color: #000000;
 }
 
 .sfondo-2 .row {
@@ -54,8 +54,8 @@ html, body {
 .rettangolo {
   width: 670px;
   height:500px;
-  background-color: #FA3500;
-  border: 1px solid #FA3500;
+  background-color: #FF6B3D;
+  border: 1px solid #FF6B3D;
   opacity: 0.4;
   top: 15%;
   right:15%;
@@ -65,8 +65,8 @@ html, body {
 .rettangolo-1 {
   width: 250px;
   height: 600px;
-  background-color: #FA3500;
-  border: 1px solid #FA3500;
+  background-color: #FF6B3D;
+  border: 1px solid #FF6B3D;
   opacity: 0.4;
   position: absolute;
   right: 10%;
@@ -100,7 +100,7 @@ html, body {
 }
 
 .nav-link {
-  color: #FA3500;
+  color: #FF6B3D;
   text-decoration: none;
   margin: 8px;
   padding: 8px;
@@ -151,7 +151,7 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #1C1C1C;
+  background-color: #000000;
   z-index: 1000;
   display: flex;
   padding-top: 33%;
@@ -176,7 +176,7 @@ html, body {
 }
 
 .mobile-nav-wrapper .nav-link.selected {
-  color: #FA3500;
+  color: #FF6B3D;
   border-bottom: none;
   cursor: default;
 }
@@ -212,7 +212,7 @@ html, body {
 .font-testi {
   font-size: 20px;
   line-height: 25px;
-  color: #1C1C1C;
+  color: #000000;
   position: relative;
   z-index: 2;
   margin-bottom: 25px;
@@ -229,7 +229,7 @@ html, body {
 .titolo-sezioni2 {
   font-size: 35px;
   line-height: 80px;
-  color: #FA3500;
+  color: #FF6B3D;
   font-weight: 500;
   position: relative;
   z-index: 2;
@@ -241,7 +241,7 @@ html, body {
 }
 
 .color-red {
-  color: #FA3500;
+  color: #FF6B3D;
 }
 
 /* Immagine + rettangolo rosso sopra */
@@ -257,7 +257,7 @@ html, body {
 .rettangolo-3 {
   width: 200px;
   height: 550px;
-  background-color: #FA3500;
+  background-color: #FF6B3D;
   opacity: 0.4;
   position: absolute;
   bottom: 0;
@@ -265,12 +265,12 @@ html, body {
 .rettangolo-4 {
   width: 850px;
   height: 321px;
-  background-color: #FA3500;
+  background-color: #FF6B3D;
   opacity: 0.4;
   position: absolute;
   top: -10px;
   right: 0;
-  color: #1C1C1C;
+  color: #000000;
   z-index: 1;
 }
 .img-prog {
@@ -289,11 +289,11 @@ html, body {
 .footer-text {
   font-size: 20px;
   line-height: 18px;
-  color: #fa3500;
+  color: #FF6B3D;
   margin-bottom: 20px;
 }
 .footer{
-  background-color: #1C1C1C;
+  background-color: #000000;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -307,11 +307,11 @@ html, body {
     bottom: -100%;
     left: 0;
     width: 100%;
-    background: #1C1C1C;
+    background: #000000;
     padding: 20px;
     transition: bottom 0.45s ease;
     z-index: 9999;
-    color: #FA3500;
+    color: #FF6B3D;
   }
 
   .form-contatti.show {
@@ -338,7 +338,7 @@ html, body {
     background: #fff;
     cursor: pointer;
     margin-top: 10px;
-    color: #FA3500;
+    color: #FF6B3D;
     border-radius: 3px;
   }
 
@@ -382,7 +382,7 @@ html, body {
 .rettangolo-1:hover,
 .rettangolo-3:hover,
 .rettangolo-4:hover {
-  background-color: #FA3500 !important; /* colore alternativo */
+  background-color: #FF6B3D !important; /* colore alternativo */
   opacity: 0.7;
 }
 
@@ -446,7 +446,7 @@ html, body {
     margin-top: -10px;
   }
   .black-progetti{
-  background-color: #1C1C1C;
+  background-color: #000000;
   margin-top: -22px;
   margin-bottom: -24px;
   min-height: 5vh;
@@ -455,8 +455,8 @@ html, body {
 .rettangolo-1 {
   width: 200px;
   height: 420px;
-  background-color: #FA3500;
-  border: 1px solid #FA3500;
+  background-color: #FF6B3D;
+  border: 1px solid #FF6B3D;
   opacity: 0.4;
   position: absolute;
   right: 5%;
@@ -465,11 +465,11 @@ html, body {
  .rettangolo-4 {
   width: 100%;
   height: 395px;
-  background-color: #FA3500;
+  background-color: #FF6B3D;
   opacity: 0.4;
   position: absolute;
   right: 0;
-  color: #1C1C1C;
+  color: #000000;
   z-index: 1;
   top: 10px;
 }

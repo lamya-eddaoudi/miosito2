@@ -212,7 +212,7 @@ html, body {
 
 .font-testi {
   font-size: 20px;
-  line-height: 25px;
+  line-height: 28px;
   color: #000000;
   position: relative;
   z-index: 2;
@@ -234,6 +234,10 @@ html, body {
   font-weight: 500;
   position: relative;
   z-index: 2;
+}
+.titolo-sezioni,
+.titolo-sezioni2 {
+  margin-bottom: 15px;
 }
 .titolo-prog {
   font-size: 30px;

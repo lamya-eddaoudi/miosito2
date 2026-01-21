@@ -120,8 +120,6 @@ html, body {
 .btn-menu {
   background: transparent url('../img/menu_25dp_FF6B3D_FILL0_wght400_GRAD0_opsz24.svg') no-repeat center center;
   border: none;
-  width: 30px;
-  height: 30px;
   font-size: 0; /* Nasconde il testo del bottone */
   margin: 10px 5px !important;
 }

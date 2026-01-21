@@ -142,8 +142,7 @@ html, body {
   cursor: pointer;
   font-size: 0; /* Nasconde il testo del bottone */
   position: absolute;
-  top: 30px;
-  right: 30px;
+  margin: 10px 5px !important;
 }
 
 .mobile-nav-wrapper {

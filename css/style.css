@@ -118,24 +118,22 @@ html, body {
 
 /* NAVIGAZIONE MOBILE*/
 .btn-menu {
-  background: transparent url('../img/menu_25dp_FF6B3D_FILL0_wght400_GRAD0_opsz24.svg') no-repeat center center;
+  background: transparent url('../img/menu_50dp_FF6B3D_FILL0_wght400_GRAD0_opsz48.svg') no-repeat center center;
   border: none;
   font-size: 0; /* Nasconde il testo del bottone */
   margin: 10px 5px !important;
 }
 
 .btn-menu:hover {
-  background-image: url('../img/menu_25dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg');
+  background-image: url('../img/menu_50dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg');
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-close {
-  background: transparent url('../img/close_25dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg') no-repeat center center;
+  background: transparent url('../img/close_50dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg') no-repeat center center;
   background-size: cover;
   border: none;
   padding: 0;
-  width: 25px;
-  height: 25px;
   cursor: pointer;
   font-size: 0; /* Nasconde il testo del bottone */
   position: absolute;

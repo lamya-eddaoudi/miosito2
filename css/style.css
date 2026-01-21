@@ -120,8 +120,8 @@ html, body {
 .btn-menu {
   background: transparent url('../img/menu_50dp_FF6B3D_FILL0_wght400_GRAD0_opsz48.svg') no-repeat center center;
   border: none;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   cursor: pointer;
   font-size: 0; /* Nasconde il testo del bottone */
   margin: 10px 5px !important;
@@ -136,8 +136,8 @@ html, body {
   background: transparent url('../img/close_50dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg') no-repeat center center;
   background-size: cover;
   border: none;
-   height: 50px;
-  width: 50px;
+   height: 40px;
+  width: 40px;
   padding: 0;
   cursor: pointer;
   font-size: 0; /* Nasconde il testo del bottone */

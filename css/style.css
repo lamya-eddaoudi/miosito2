@@ -136,6 +136,8 @@ html, body {
   background: transparent url('../img/close_50dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg') no-repeat center center;
   background-size: cover;
   border: none;
+   height: 50px;
+  width: 50px;
   padding: 0;
   cursor: pointer;
   font-size: 0; /* Nasconde il testo del bottone */
